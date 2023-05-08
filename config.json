@@ -5,7 +5,7 @@
     },
     "production": {
       "username": "alex",
-      "host": "student-sign-in-database-server-alex.database.windows.net",
+      "host": "student-sign-in-databse-server-alex.database.windows.net",
       "database": "student-sign-in-database",
       "dialect": "mssql"
     }
