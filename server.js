@@ -13,7 +13,7 @@ app.use(function(req, res, next) {
 
 app.use(function(err, req, res, next) {
     console.error(err.stack)
-    res.tatus(500).send('server error')
+    res.status(500).send('server error')
 })
 
 let server=app.listen(process.env.PORT||3000, function() {
