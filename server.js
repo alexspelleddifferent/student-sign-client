@@ -1,9 +1,15 @@
 let express = require('express')
+let bodyParser = require('body-parser')
 let api_routes = require('./routes/api.js')
+let path = require('path')
 
 let app = express()
 
-app.use(express.json())
+let vueClientDirectory=path.join(__dirname, 'student-sign-in', 'dist')
+let vueApp=express.static(vueClientDirectory)
+app.use('/', vueApp)
+
+app.use(bodyParser.json())
 
 app.use('/api', api_routes)
 
