@@ -1,6 +1,6 @@
 let {Sequelize, DataTypes} = require('sequelize')
 
-let env = process.env.NODE_ENV|| 'development'
+let env = process.env.NODE_ENV || 'development'
 
 console.log('using environment'+ env)
 
