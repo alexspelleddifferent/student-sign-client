@@ -1,0 +1,12 @@
+{
+    "development": {
+      "storage": "student.sqlite",
+      "dialect": "sqlite"
+    },
+    "production": {
+      "username": "Alex",
+      "host": "alex_server.database.windows.net",
+      "database": "alex_students",
+      "dialect": "mssql"
+    }
+  }
